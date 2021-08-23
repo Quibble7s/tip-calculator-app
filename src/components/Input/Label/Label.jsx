@@ -4,7 +4,9 @@ import './Label.css'
 
 const Label = ({id, label}) => {
   return (
-      <label htmlFor={id} className="label">{label}</label>
+    <div className="label-component">
+      <label htmlFor={id} className="label-component__label">{label}</label>
+    </div>
   )
 }
 
