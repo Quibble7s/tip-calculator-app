@@ -4,8 +4,8 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <div className="Header">
-      
+    <div className="header">
+      <h1 className="header__title">SPLI<br />TTER</h1>
     </div>
   )
 }
