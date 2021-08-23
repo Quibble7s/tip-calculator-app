@@ -11,7 +11,7 @@
   --white: hsl(0, 0%, 100%);
 
   /*Fonts*/
-
+  --input-font-size: calc(24px + 1vmin);
 }
 
 *{
@@ -19,6 +19,7 @@
   padding: 0;
   box-sizing: border-box;
   position: relative;
+  font-family: 'Space Mono', monospace;
 }
 
 body {
