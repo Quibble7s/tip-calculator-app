@@ -14,12 +14,6 @@
   border: 2px solid var(--strong-cyan);
 }
 
-.number-input__label{
-  color: var(--dark-grayish-cyan);
-  margin-top: 10px;
-  font-weight: 700;
-}
-
 .number-input__input{
   width: 100%;
   appearance: textfield;

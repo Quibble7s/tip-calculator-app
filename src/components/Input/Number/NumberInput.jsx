@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Label from '../Label/Label';
 
 import './NumberInput.css';
 
@@ -12,7 +13,7 @@ const NumberInput = ({id, src, imageAlt, label, onInputChangeHandler, value}) =>
 
   return (
     <div style={{marginTop: "10px"}}>
-      <label htmlFor={id} className="number-input__label">{label}</label>
+      <Label id={id} label={label}/>
       <div className="number-input">
         <img className="number-input__image" src={src} alt={imageAlt} />
         <input 
