@@ -9,9 +9,9 @@ import './Splitter.css'
 const Splitter = () => {
 
   const [values, setValues] = useState({
-    bill: "",
-    people: "",
-    percentage: ""
+    bill: 0,
+    people: 0,
+    percentage: 0
   });
 
   const {bill, people, percentage} = values;
@@ -33,16 +33,17 @@ const Splitter = () => {
   };
   
   const calcTipPerPerson = () => {
-    if(isNaN(bill) || isNaN(people)){
+    if(isNaN(bill) || isNaN(people) || !isFinite(bill / parseInt(people))){
       return 0.00.toFixed(2);
     }
-    return Math.round((((bill * percentage) / 100 / people) + Number.EPSILON) * 100) / 100;
+    return Math.round((((bill * percentage) / 100 / parseInt(people)) + Number.EPSILON) * 100) / 100;
   };
+  
   const calcTotalPerPerson = () => {
-    if(isNaN(bill) || isNaN(people)){
+    if(isNaN(bill) || isNaN(people) || !isFinite(bill / parseInt(people))){
       return 0.00.toFixed(2);
     }
-    return Math.round((((bill / people) + calcTipPerPerson()) + Number.EPSILON) * 100) / 100;
+    return Math.round((((bill / parseInt(people)) + calcTipPerPerson()) + Number.EPSILON) * 100) / 100;
   };
   
 
