@@ -1,0 +1,24 @@
+.percentage-label{
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  border-radius: 8px;
+  text-align: center;
+  font-size: var(--input-font-size);
+  font-weight: 600;
+  width: 47.5%;
+  padding: 0.2rem;
+  margin: 8px;
+}
+
+.percentage-label--active{
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.percentage-label:nth-child(1n){margin-left: 0px;}
+.percentage-label:nth-child(2n + 1){margin-right: 0px;}
+
+.percentage-input{
+  position: absolute;
+  opacity: 0;
+}
