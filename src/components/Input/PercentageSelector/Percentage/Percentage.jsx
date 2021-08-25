@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import './Percentage.css'
 
-const Percentage = ({id, type, percentage, onSelected}) => {
+const Percentage = ({id, percentage, onSelected}) => {
 
   const inactive = "percentage-label";
   const active = "percentage-label percentage-label--active";
