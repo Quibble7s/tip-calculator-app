@@ -1,0 +1,24 @@
+.splitter{
+  width: 100%;
+  background-color: var(--very-light-grayish-cyan);
+  padding: 2rem;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  flex: 1 1 auto;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.total-tip{
+  width: 100%;
+  border-radius: 16px;
+  background-color: var(--very-dark-cyan);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
