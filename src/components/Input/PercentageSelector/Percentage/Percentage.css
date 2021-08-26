@@ -8,11 +8,29 @@
   width: 47.5%;
   padding: 0.2rem;
   margin: 8px;
+  cursor: pointer;
+}
+
+@keyframes percentage-hover {
+  100%{
+    background-color: hsla(172, 67%, 45%, 0.5);
+    color: var(--very-dark-cyan);
+  }
+}
+
+.percentage-label:hover:not(.percentage-label--active){
+  animation: percentage-hover 150ms ease-in forwards;
+}
+
+@keyframes percentage-active {
+  100%{
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+  }
 }
 
 .percentage-label--active{
-  background-color: var(--strong-cyan);
-  color: var(--very-dark-cyan);
+  animation: percentage-active 100ms ease-in forwards;
 }
 
 .percentage-label:nth-child(1n){margin-left: 0px;}
@@ -21,4 +39,10 @@
 .percentage-input{
   position: absolute;
   opacity: 0;
+}
+
+@media (min-width: 900px) {
+  .percentage-label{
+    width: 31%;
+  }
 }

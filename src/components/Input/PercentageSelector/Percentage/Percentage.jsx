@@ -6,11 +6,12 @@ const Percentage = ({id, percentage, onSelected}) => {
 
   const inactive = "percentage-label";
   const active = "percentage-label percentage-label--active";
+  const customPercentage = document.getElementById("custom-percentage");
   const percentages = document.getElementsByName("percentage");
 
   const onFocus = () => {
     for (let i = 0; i < percentages.length; i++) {
-      if(percentages[i].checked){
+      if(percentages[i].checked && !customPercentage.checked){
         document.getElementById(`label-${i}`).className = active;
       }else{
         document.getElementById(`label-${i}`).className = inactive;

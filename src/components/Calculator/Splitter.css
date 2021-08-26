@@ -1,4 +1,7 @@
 .splitter{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   background-color: var(--very-light-grayish-cyan);
   padding: 2rem;
@@ -12,13 +15,42 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
+  flex: 1 1 auto;
 }
 
 .total-tip{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   border-radius: 16px;
   background-color: var(--very-dark-cyan);
   padding: 1rem;
   margin-top: 2rem;
+  flex: 1 1 auto;
 }
 
+
+@media (min-width: 900px) {
+  .splitter{
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    flex: 0 0 0;
+  }
+
+  .form{
+    flex-direction: row;
+  }
+
+  .inputs{
+    width: 50%;
+  }
+
+  .total-tip{
+    width: 45%;
+    margin-left: 2rem;
+    margin-top: 0;
+  }
+}

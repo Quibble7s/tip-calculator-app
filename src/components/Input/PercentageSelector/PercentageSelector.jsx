@@ -1,9 +1,12 @@
 import React from 'react'
+
 import Label from '../Label/Label'
+import CustomPercentage from './Percentage/CustomPercentage'
 import Percentage from './Percentage/Percentage'
+
 import './PercentageSelector.css'
 
-const PercentageSelector = ({label, onClickHandler}) => {
+const PercentageSelector = ({label, onClickHandler, customPercentageValue}) => {
 
   return (
     <div className="percentage-selector">
@@ -34,6 +37,10 @@ const PercentageSelector = ({label, onClickHandler}) => {
         <Percentage
           id="4"
           percentage="50%"
+          onSelected={onClickHandler}
+        />
+        <CustomPercentage
+          customValue={customPercentageValue}
           onSelected={onClickHandler}
         />
       </div>

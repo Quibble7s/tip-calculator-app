@@ -2,10 +2,10 @@ import React from 'react'
 
 import './Label.css'
 
-const Label = ({id, label}) => {
+const Label = ({id, label, name, style}) => {
   return (
     <div className="label-component">
-      <label htmlFor={id} className="label-component__label">{label}</label>
+      <label style={style} htmlFor={id} name={name} className="label-component__label">{label}</label>
     </div>
   )
 }
