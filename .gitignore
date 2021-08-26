@@ -10,9 +10,10 @@
 
 # production
 /build
+/Tip-calculator-v1.0.0-Build
 
-# desing
-/desing
+# design
+/design
 
 # misc
 .DS_Store
