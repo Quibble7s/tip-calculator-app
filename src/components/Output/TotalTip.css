@@ -38,9 +38,7 @@
 
 @media (min-width: 900px) {
   .total{margin-top: 1.5rem;}
-}
-
-@media (min-width: 900px) {
+  
   .total__total{
     font-size: calc(var(--input-font-size) * 1.5);
   }

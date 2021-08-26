@@ -30,8 +30,7 @@
   flex: 1 1 auto;
 }
 
-
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .splitter{
     border-radius: 16px;
     justify-content: center;
@@ -39,11 +38,17 @@
     width: 70%;
     flex: 0 0 0;
   }
-
+  
   .form{
     flex-direction: row;
   }
+  
+  .inputs{
+    width: 100%;
+  }
+}
 
+@media (min-width: 1440px) {
   .inputs{
     width: 50%;
   }
