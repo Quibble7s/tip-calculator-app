@@ -16,5 +16,5 @@ wanted to go back and modify the code because this project was already taking mo
 
 ## Screenshots
 
-![Desktop](./src/ScreenShots/screenshot-desktop.png)
-![Mobile](./src/ScreenShots/screenshot-mobile.png)
+![Desktop](https://github.com/Quibble7s/tip-calculator-app/blob/master/src/ScreenShots/screenshot-desktop.png)
+![Mobile](https://raw.githubusercontent.com/Quibble7s/tip-calculator-app/master/src/ScreenShots/screenshot-mobile.png)
