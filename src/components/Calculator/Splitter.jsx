@@ -34,7 +34,7 @@ const Splitter = () => {
       }else{
         setValues({
           ...values,
-          percentage: NaN,
+          percentage: e.target.id === "custom-percentage" ? NaN : percentage,
           [e.target.name]: val
         });
       }
