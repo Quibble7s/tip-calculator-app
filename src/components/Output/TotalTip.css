@@ -1,15 +1,13 @@
-.total{
+.total {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: auto;
+  overflow: hidden;
 }
 
-.total__button{
+.total__button {
   width: 100%;
   padding: 0.5rem;
   text-align: center;
@@ -23,26 +21,31 @@
   cursor: pointer;
 }
 
-.total__header{
+.total__header {
   font-weight: 700;
   color: var(--white);
 }
 
-.total__person{
+.total__person {
   font-weight: 400;
   color: var(--dark-grayish-cyan);
 }
 
-.total__total{
+.total__total {
   font-weight: 700;
   font-size: var(--input-font-size);
   color: var(--strong-cyan);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (min-width: 900px) {
-  .total{margin-top: 1.5rem;}
-  
-  .total__total{
+  .total {
+    margin-top: 1.5rem;
+  }
+
+  .total__total {
     font-size: calc(var(--input-font-size) * 1.5);
   }
 }
